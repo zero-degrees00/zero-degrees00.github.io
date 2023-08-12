@@ -191,7 +191,7 @@ isConditionTrue_0 = false;
 isConditionTrue_0 = gdjs.evtTools.object.getSceneInstancesCount((typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : runtimeScene), gdjs.MainCode.mapOfEmptyGDBulletObjects) < 3;
 if (isConditionTrue_0) {
 isConditionTrue_0 = false;
-{isConditionTrue_0 = runtimeScene.getOnceTriggers().triggerOnce(9324988);
+{isConditionTrue_0 = runtimeScene.getOnceTriggers().triggerOnce(9193388);
 }
 }
 }
@@ -220,7 +220,7 @@ isConditionTrue_0 = false;
 isConditionTrue_0 = gdjs.evtTools.object.getSceneInstancesCount((typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : runtimeScene), gdjs.MainCode.mapOfEmptyGDBulletObjects) < 3;
 if (isConditionTrue_0) {
 isConditionTrue_0 = false;
-{isConditionTrue_0 = runtimeScene.getOnceTriggers().triggerOnce(9326492);
+{isConditionTrue_0 = runtimeScene.getOnceTriggers().triggerOnce(9194892);
 }
 }
 }
@@ -408,7 +408,7 @@ isConditionTrue_0 = false;
 isConditionTrue_0 = gdjs.evtTools.object.getSceneInstancesCount((typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : runtimeScene), gdjs.MainCode.mapOfEmptyGDGreenUfoObjectsEmptyGDGreenUfo2ObjectsEmptyGDGreenUfo3Objects) == 0;
 if (isConditionTrue_0) {
 isConditionTrue_0 = false;
-{isConditionTrue_0 = runtimeScene.getOnceTriggers().triggerOnce(9317764);
+{isConditionTrue_0 = runtimeScene.getOnceTriggers().triggerOnce(9186204);
 }
 }
 if (isConditionTrue_0) {
@@ -543,10 +543,10 @@ gdjs.copyArray(runtimeScene.getObjects("Wall2"), gdjs.MainCode.GDWall2Objects1);
     gdjs.MainCode.GDDeadObjects1[i].setPosition(gdjs.evtTools.window.getGameResolutionWidth(runtimeScene) / 2 - (gdjs.MainCode.GDDeadObjects1[i].getWidth()) / 2,gdjs.evtTools.window.getGameResolutionHeight(runtimeScene) / 2 - (gdjs.MainCode.GDDeadObjects1[i].getHeight()) / 2);
 }
 }{for(var i = 0, len = gdjs.MainCode.GDGreenUfoObjects1.length ;i < len;++i) {
-    gdjs.MainCode.GDGreenUfoObjects1[i].addForceTowardObject((gdjs.MainCode.GDGreenUfo2Objects1.length !== 0 ? gdjs.MainCode.GDGreenUfo2Objects1[0] : null), gdjs.randomInRange(10, 50), 1);
+    gdjs.MainCode.GDGreenUfoObjects1[i].addForceTowardObject((gdjs.MainCode.GDGreenUfo2Objects1.length !== 0 ? gdjs.MainCode.GDGreenUfo2Objects1[0] : null), gdjs.randomInRange(10, 20), 1);
 }
 }{for(var i = 0, len = gdjs.MainCode.GDGreenUfo3Objects1.length ;i < len;++i) {
-    gdjs.MainCode.GDGreenUfo3Objects1[i].addForceTowardObject((gdjs.MainCode.GDGreenUfo2Objects1.length !== 0 ? gdjs.MainCode.GDGreenUfo2Objects1[0] : null), gdjs.randomInRange(10, 50), 1);
+    gdjs.MainCode.GDGreenUfo3Objects1[i].addForceTowardObject((gdjs.MainCode.GDGreenUfo2Objects1.length !== 0 ? gdjs.MainCode.GDGreenUfo2Objects1[0] : null), gdjs.randomInRange(10, 20), 1);
 }
 }{for(var i = 0, len = gdjs.MainCode.GDGreenUfo2Objects1.length ;i < len;++i) {
     gdjs.MainCode.GDGreenUfo2Objects1[i].getBehavior("ObjectSpawner").SetSpawnPeriod(gdjs.randomInRange(5, 10), (typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined));
@@ -914,7 +914,7 @@ isConditionTrue_0 = false;
 isConditionTrue_0 = gdjs.evtTools.variable.getVariableBoolean(runtimeScene.getGame().getVariables().getFromIndex(3), false);
 if (isConditionTrue_0) {
 isConditionTrue_0 = false;
-{isConditionTrue_0 = runtimeScene.getOnceTriggers().triggerOnce(9349948);
+{isConditionTrue_0 = runtimeScene.getOnceTriggers().triggerOnce(9218348);
 }
 }
 }
