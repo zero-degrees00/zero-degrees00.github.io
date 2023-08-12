@@ -59,6 +59,12 @@ gdjs.MainCode.GDSkyWallObjects3= [];
 gdjs.MainCode.GDUFOSeparatorObjects1= [];
 gdjs.MainCode.GDUFOSeparatorObjects2= [];
 gdjs.MainCode.GDUFOSeparatorObjects3= [];
+gdjs.MainCode.GDSplashObjects1= [];
+gdjs.MainCode.GDSplashObjects2= [];
+gdjs.MainCode.GDSplashObjects3= [];
+gdjs.MainCode.GDControlsObjects1= [];
+gdjs.MainCode.GDControlsObjects2= [];
+gdjs.MainCode.GDControlsObjects3= [];
 
 
 gdjs.MainCode.mapOfEmptyGDGreenUfoObjectsEmptyGDGreenUfo2ObjectsEmptyGDGreenUfo3Objects = Hashtable.newFrom({"GreenUfo": [], "GreenUfo2": [], "GreenUfo3": []});
@@ -191,7 +197,7 @@ isConditionTrue_0 = false;
 isConditionTrue_0 = gdjs.evtTools.object.getSceneInstancesCount((typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : runtimeScene), gdjs.MainCode.mapOfEmptyGDBulletObjects) < 3;
 if (isConditionTrue_0) {
 isConditionTrue_0 = false;
-{isConditionTrue_0 = runtimeScene.getOnceTriggers().triggerOnce(9193388);
+{isConditionTrue_0 = runtimeScene.getOnceTriggers().triggerOnce(9302260);
 }
 }
 }
@@ -220,7 +226,7 @@ isConditionTrue_0 = false;
 isConditionTrue_0 = gdjs.evtTools.object.getSceneInstancesCount((typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : runtimeScene), gdjs.MainCode.mapOfEmptyGDBulletObjects) < 3;
 if (isConditionTrue_0) {
 isConditionTrue_0 = false;
-{isConditionTrue_0 = runtimeScene.getOnceTriggers().triggerOnce(9194892);
+{isConditionTrue_0 = runtimeScene.getOnceTriggers().triggerOnce(9303772);
 }
 }
 }
@@ -371,6 +377,7 @@ gdjs.copyArray(runtimeScene.getObjects("Dead"), gdjs.MainCode.GDDeadObjects1);
 gdjs.copyArray(runtimeScene.getObjects("GreenUfo2"), gdjs.MainCode.GDGreenUfo2Objects1);
 gdjs.copyArray(runtimeScene.getObjects("NativeAngry"), gdjs.MainCode.GDNativeAngryObjects1);
 gdjs.copyArray(runtimeScene.getObjects("Separator"), gdjs.MainCode.GDSeparatorObjects1);
+gdjs.copyArray(runtimeScene.getObjects("Splash"), gdjs.MainCode.GDSplashObjects1);
 gdjs.copyArray(runtimeScene.getObjects("UFOSeparator"), gdjs.MainCode.GDUFOSeparatorObjects1);
 {for(var i = 0, len = gdjs.MainCode.GDNativeAngryObjects1.length ;i < len;++i) {
     gdjs.MainCode.GDNativeAngryObjects1[i].returnVariable(gdjs.MainCode.GDNativeAngryObjects1[i].getVariables().getFromIndex(0)).setNumber(3);
@@ -395,6 +402,31 @@ gdjs.copyArray(runtimeScene.getObjects("UFOSeparator"), gdjs.MainCode.GDUFOSepar
 }{for(var i = 0, len = gdjs.MainCode.GDGreenUfo2Objects1.length ;i < len;++i) {
     gdjs.MainCode.GDGreenUfo2Objects1[i].resetTimer("firePick");
 }
+}{gdjs.evtTools.runtimeScene.resetTimer(runtimeScene, "sceneTimer");
+}{for(var i = 0, len = gdjs.MainCode.GDSplashObjects1.length ;i < len;++i) {
+    gdjs.MainCode.GDSplashObjects1[i].setOpacity(50);
+}
+}}
+
+}
+
+
+{
+
+
+let isConditionTrue_0 = false;
+isConditionTrue_0 = false;
+isConditionTrue_0 = gdjs.evtTools.runtimeScene.getTimerElapsedTimeInSecondsOrNaN(runtimeScene, "sceneTimer") >= 2;
+if (isConditionTrue_0) {
+gdjs.copyArray(runtimeScene.getObjects("Controls"), gdjs.MainCode.GDControlsObjects1);
+gdjs.copyArray(runtimeScene.getObjects("Splash"), gdjs.MainCode.GDSplashObjects1);
+{for(var i = 0, len = gdjs.MainCode.GDSplashObjects1.length ;i < len;++i) {
+    gdjs.MainCode.GDSplashObjects1[i].hide();
+}
+for(var i = 0, len = gdjs.MainCode.GDControlsObjects1.length ;i < len;++i) {
+    gdjs.MainCode.GDControlsObjects1[i].hide();
+}
+}{gdjs.evtTools.runtimeScene.removeTimer(runtimeScene, "sceneTimer");
 }}
 
 }
@@ -408,7 +440,7 @@ isConditionTrue_0 = false;
 isConditionTrue_0 = gdjs.evtTools.object.getSceneInstancesCount((typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : runtimeScene), gdjs.MainCode.mapOfEmptyGDGreenUfoObjectsEmptyGDGreenUfo2ObjectsEmptyGDGreenUfo3Objects) == 0;
 if (isConditionTrue_0) {
 isConditionTrue_0 = false;
-{isConditionTrue_0 = runtimeScene.getOnceTriggers().triggerOnce(9186204);
+{isConditionTrue_0 = runtimeScene.getOnceTriggers().triggerOnce(9055660);
 }
 }
 if (isConditionTrue_0) {
@@ -466,6 +498,7 @@ let isConditionTrue_0 = false;
 {
 gdjs.copyArray(runtimeScene.getObjects("BlueFloor2"), gdjs.MainCode.GDBlueFloor2Objects1);
 gdjs.copyArray(runtimeScene.getObjects("Bullet"), gdjs.MainCode.GDBulletObjects1);
+gdjs.copyArray(runtimeScene.getObjects("Controls"), gdjs.MainCode.GDControlsObjects1);
 gdjs.copyArray(runtimeScene.getObjects("Dead"), gdjs.MainCode.GDDeadObjects1);
 gdjs.copyArray(runtimeScene.getObjects("GrassAndTreeBackground"), gdjs.MainCode.GDGrassAndTreeBackgroundObjects1);
 gdjs.copyArray(runtimeScene.getObjects("GreenFloor"), gdjs.MainCode.GDGreenFloorObjects1);
@@ -475,6 +508,7 @@ gdjs.copyArray(runtimeScene.getObjects("GreenUfo3"), gdjs.MainCode.GDGreenUfo3Ob
 gdjs.copyArray(runtimeScene.getObjects("IcePick"), gdjs.MainCode.GDIcePickObjects1);
 gdjs.copyArray(runtimeScene.getObjects("Separator"), gdjs.MainCode.GDSeparatorObjects1);
 gdjs.copyArray(runtimeScene.getObjects("SkyWall"), gdjs.MainCode.GDSkyWallObjects1);
+gdjs.copyArray(runtimeScene.getObjects("Splash"), gdjs.MainCode.GDSplashObjects1);
 gdjs.copyArray(runtimeScene.getObjects("SquidSpaceEnemy"), gdjs.MainCode.GDSquidSpaceEnemyObjects1);
 gdjs.copyArray(runtimeScene.getObjects("UFOSeparator"), gdjs.MainCode.GDUFOSeparatorObjects1);
 gdjs.copyArray(runtimeScene.getObjects("Wall"), gdjs.MainCode.GDWallObjects1);
@@ -559,6 +593,15 @@ gdjs.copyArray(runtimeScene.getObjects("Wall2"), gdjs.MainCode.GDWall2Objects1);
 }
 }{for(var i = 0, len = gdjs.MainCode.GDSquidSpaceEnemyObjects1.length ;i < len;++i) {
     gdjs.MainCode.GDSquidSpaceEnemyObjects1[i].getBehavior("ObjectSpawner").SetSpawnPeriod(gdjs.randomInRange(1, 10), (typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined));
+}
+}{for(var i = 0, len = gdjs.MainCode.GDSplashObjects1.length ;i < len;++i) {
+    gdjs.MainCode.GDSplashObjects1[i].setPosition(gdjs.evtTools.window.getGameResolutionWidth(runtimeScene) / 2 - (gdjs.MainCode.GDSplashObjects1[i].getWidth()) / 2,gdjs.evtTools.window.getGameResolutionHeight(runtimeScene) / 2 - (gdjs.MainCode.GDSplashObjects1[i].getHeight()) / 2);
+}
+for(var i = 0, len = gdjs.MainCode.GDControlsObjects1.length ;i < len;++i) {
+    gdjs.MainCode.GDControlsObjects1[i].setPosition(gdjs.evtTools.window.getGameResolutionWidth(runtimeScene) / 2 - (gdjs.MainCode.GDControlsObjects1[i].getWidth()) / 2,gdjs.evtTools.window.getGameResolutionHeight(runtimeScene) / 2 - (gdjs.MainCode.GDControlsObjects1[i].getHeight()) / 2);
+}
+}{for(var i = 0, len = gdjs.MainCode.GDSplashObjects1.length ;i < len;++i) {
+    gdjs.MainCode.GDSplashObjects1[i].setSize(gdjs.evtTools.window.getGameResolutionWidth(runtimeScene), gdjs.evtTools.window.getGameResolutionHeight(runtimeScene));
 }
 }}
 
@@ -914,7 +957,7 @@ isConditionTrue_0 = false;
 isConditionTrue_0 = gdjs.evtTools.variable.getVariableBoolean(runtimeScene.getGame().getVariables().getFromIndex(3), false);
 if (isConditionTrue_0) {
 isConditionTrue_0 = false;
-{isConditionTrue_0 = runtimeScene.getOnceTriggers().triggerOnce(9218348);
+{isConditionTrue_0 = runtimeScene.getOnceTriggers().triggerOnce(9327268);
 }
 }
 }
@@ -1000,6 +1043,12 @@ gdjs.MainCode.GDSkyWallObjects3.length = 0;
 gdjs.MainCode.GDUFOSeparatorObjects1.length = 0;
 gdjs.MainCode.GDUFOSeparatorObjects2.length = 0;
 gdjs.MainCode.GDUFOSeparatorObjects3.length = 0;
+gdjs.MainCode.GDSplashObjects1.length = 0;
+gdjs.MainCode.GDSplashObjects2.length = 0;
+gdjs.MainCode.GDSplashObjects3.length = 0;
+gdjs.MainCode.GDControlsObjects1.length = 0;
+gdjs.MainCode.GDControlsObjects2.length = 0;
+gdjs.MainCode.GDControlsObjects3.length = 0;
 
 gdjs.MainCode.eventsList2(runtimeScene);
 
