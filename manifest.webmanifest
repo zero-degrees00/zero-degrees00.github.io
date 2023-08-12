@@ -1,7 +1,7 @@
 {
   "name": "Website Game Demo",
   "short_name": "Website Game Demo",
-  "id": "com.example.gamename",
+  "id": "com.primodialgamez.nativeangry",
   "description": "",
   "orientation": "landscape",
   "start_url": "./index.html",
