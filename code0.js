@@ -9,6 +9,8 @@ gdjs.IntroCode.GDPlayHouseObjects1= [];
 gdjs.IntroCode.GDPlayHouseObjects2= [];
 gdjs.IntroCode.GDPlayPestzObjects1= [];
 gdjs.IntroCode.GDPlayPestzObjects2= [];
+gdjs.IntroCode.GDPlayCheezyObjects1= [];
+gdjs.IntroCode.GDPlayCheezyObjects2= [];
 gdjs.IntroCode.GDTitle1Objects1= [];
 gdjs.IntroCode.GDTitle1Objects2= [];
 gdjs.IntroCode.GDTitle2Objects1= [];
@@ -17,6 +19,8 @@ gdjs.IntroCode.GDHouseBalloonObjects1= [];
 gdjs.IntroCode.GDHouseBalloonObjects2= [];
 gdjs.IntroCode.GDPestzControlObjects1= [];
 gdjs.IntroCode.GDPestzControlObjects2= [];
+gdjs.IntroCode.GDCheezyPathObjects1= [];
+gdjs.IntroCode.GDCheezyPathObjects2= [];
 gdjs.IntroCode.GDDemoObjects1= [];
 gdjs.IntroCode.GDDemoObjects2= [];
 gdjs.IntroCode.GDBuyMeObjects1= [];
@@ -27,6 +31,7 @@ gdjs.IntroCode.mapOfGDgdjs_9546IntroCode_9546GDPizzaObjects1Objects = Hashtable.
 gdjs.IntroCode.mapOfGDgdjs_9546IntroCode_9546GDPlayDemoObjects1Objects = Hashtable.newFrom({"PlayDemo": gdjs.IntroCode.GDPlayDemoObjects1});
 gdjs.IntroCode.mapOfGDgdjs_9546IntroCode_9546GDPlayHouseObjects1Objects = Hashtable.newFrom({"PlayHouse": gdjs.IntroCode.GDPlayHouseObjects1});
 gdjs.IntroCode.mapOfGDgdjs_9546IntroCode_9546GDPlayPestzObjects1Objects = Hashtable.newFrom({"PlayPestz": gdjs.IntroCode.GDPlayPestzObjects1});
+gdjs.IntroCode.mapOfGDgdjs_9546IntroCode_9546GDPlayCheezyObjects1Objects = Hashtable.newFrom({"PlayCheezy": gdjs.IntroCode.GDPlayCheezyObjects1});
 gdjs.IntroCode.mapOfGDgdjs_9546IntroCode_9546GDPizzaObjects1Objects = Hashtable.newFrom({"Pizza": gdjs.IntroCode.GDPizzaObjects1});
 gdjs.IntroCode.mapOfGDgdjs_9546IntroCode_9546GDPizzaObjects1Objects = Hashtable.newFrom({"Pizza": gdjs.IntroCode.GDPizzaObjects1});
 gdjs.IntroCode.eventsList0 = function(runtimeScene) {
@@ -60,7 +65,7 @@ isConditionTrue_0 = false;
 isConditionTrue_0 = gdjs.evtTools.input.isMouseButtonReleased(runtimeScene, "Left");
 if (isConditionTrue_0) {
 isConditionTrue_0 = false;
-{isConditionTrue_0 = runtimeScene.getOnceTriggers().triggerOnce(16190084);
+{isConditionTrue_0 = runtimeScene.getOnceTriggers().triggerOnce(14843900);
 }
 }
 }
@@ -83,7 +88,7 @@ isConditionTrue_0 = false;
 isConditionTrue_0 = gdjs.evtTools.input.isMouseButtonReleased(runtimeScene, "Left");
 if (isConditionTrue_0) {
 isConditionTrue_0 = false;
-{isConditionTrue_0 = runtimeScene.getOnceTriggers().triggerOnce(16191076);
+{isConditionTrue_0 = runtimeScene.getOnceTriggers().triggerOnce(15583428);
 }
 }
 }
@@ -106,7 +111,7 @@ isConditionTrue_0 = false;
 isConditionTrue_0 = gdjs.evtTools.input.isMouseButtonReleased(runtimeScene, "Left");
 if (isConditionTrue_0) {
 isConditionTrue_0 = false;
-{isConditionTrue_0 = runtimeScene.getOnceTriggers().triggerOnce(16192004);
+{isConditionTrue_0 = runtimeScene.getOnceTriggers().triggerOnce(15075156);
 }
 }
 }
@@ -129,7 +134,7 @@ isConditionTrue_0 = false;
 isConditionTrue_0 = gdjs.evtTools.input.isMouseButtonReleased(runtimeScene, "Left");
 if (isConditionTrue_0) {
 isConditionTrue_0 = false;
-{isConditionTrue_0 = runtimeScene.getOnceTriggers().triggerOnce(16193388);
+{isConditionTrue_0 = runtimeScene.getOnceTriggers().triggerOnce(11841780);
 }
 }
 }
@@ -142,13 +147,38 @@ if (isConditionTrue_0) {
 
 {
 
+gdjs.copyArray(runtimeScene.getObjects("PlayCheezy"), gdjs.IntroCode.GDPlayCheezyObjects1);
+
+let isConditionTrue_0 = false;
+isConditionTrue_0 = false;
+isConditionTrue_0 = gdjs.evtTools.input.cursorOnObject(gdjs.IntroCode.mapOfGDgdjs_9546IntroCode_9546GDPlayCheezyObjects1Objects, runtimeScene, true, false);
+if (isConditionTrue_0) {
+isConditionTrue_0 = false;
+isConditionTrue_0 = gdjs.evtTools.input.isMouseButtonReleased(runtimeScene, "Left");
+if (isConditionTrue_0) {
+isConditionTrue_0 = false;
+{isConditionTrue_0 = runtimeScene.getOnceTriggers().triggerOnce(15026628);
+}
+}
+}
+if (isConditionTrue_0) {
+{gdjs.evtTools.window.openURL("https://primordialgamez.github.io/CheezyPath", runtimeScene);
+}}
+
+}
+
+
+{
+
 
 let isConditionTrue_0 = false;
 {
 gdjs.copyArray(runtimeScene.getObjects("BuyMe"), gdjs.IntroCode.GDBuyMeObjects1);
+gdjs.copyArray(runtimeScene.getObjects("CheezyPath"), gdjs.IntroCode.GDCheezyPathObjects1);
 gdjs.copyArray(runtimeScene.getObjects("HouseBalloon"), gdjs.IntroCode.GDHouseBalloonObjects1);
 gdjs.copyArray(runtimeScene.getObjects("PestzControl"), gdjs.IntroCode.GDPestzControlObjects1);
 gdjs.copyArray(runtimeScene.getObjects("Pizza"), gdjs.IntroCode.GDPizzaObjects1);
+gdjs.copyArray(runtimeScene.getObjects("PlayCheezy"), gdjs.IntroCode.GDPlayCheezyObjects1);
 gdjs.copyArray(runtimeScene.getObjects("PlayHouse"), gdjs.IntroCode.GDPlayHouseObjects1);
 gdjs.copyArray(runtimeScene.getObjects("PlayPestz"), gdjs.IntroCode.GDPlayPestzObjects1);
 gdjs.copyArray(runtimeScene.getObjects("Title1"), gdjs.IntroCode.GDTitle1Objects1);
@@ -165,6 +195,12 @@ gdjs.copyArray(runtimeScene.getObjects("WinterBackground"), gdjs.IntroCode.GDWin
 }
 }{for(var i = 0, len = gdjs.IntroCode.GDHouseBalloonObjects1.length ;i < len;++i) {
     gdjs.IntroCode.GDHouseBalloonObjects1[i].setX((( gdjs.IntroCode.GDPlayHouseObjects1.length === 0 ) ? 0 :gdjs.IntroCode.GDPlayHouseObjects1[0].getPointX("")) + (( gdjs.IntroCode.GDPlayHouseObjects1.length === 0 ) ? 0 :gdjs.IntroCode.GDPlayHouseObjects1[0].getWidth()) * 1.5);
+}
+}{for(var i = 0, len = gdjs.IntroCode.GDPlayCheezyObjects1.length ;i < len;++i) {
+    gdjs.IntroCode.GDPlayCheezyObjects1[i].setX((( gdjs.IntroCode.GDTitle1Objects1.length === 0 ) ? 0 :gdjs.IntroCode.GDTitle1Objects1[0].getX()));
+}
+}{for(var i = 0, len = gdjs.IntroCode.GDCheezyPathObjects1.length ;i < len;++i) {
+    gdjs.IntroCode.GDCheezyPathObjects1[i].setX((( gdjs.IntroCode.GDPlayHouseObjects1.length === 0 ) ? 0 :gdjs.IntroCode.GDPlayHouseObjects1[0].getPointX("")) + (( gdjs.IntroCode.GDPlayHouseObjects1.length === 0 ) ? 0 :gdjs.IntroCode.GDPlayHouseObjects1[0].getWidth()) * 1.5);
 }
 }{for(var i = 0, len = gdjs.IntroCode.GDTitle2Objects1.length ;i < len;++i) {
     gdjs.IntroCode.GDTitle2Objects1[i].setX(gdjs.evtTools.window.getGameResolutionWidth(runtimeScene) / 2 + gdjs.evtTools.window.getGameResolutionWidth(runtimeScene) / 4 - (gdjs.IntroCode.GDTitle2Objects1[i].getWidth()));
@@ -254,6 +290,8 @@ gdjs.IntroCode.GDPlayHouseObjects1.length = 0;
 gdjs.IntroCode.GDPlayHouseObjects2.length = 0;
 gdjs.IntroCode.GDPlayPestzObjects1.length = 0;
 gdjs.IntroCode.GDPlayPestzObjects2.length = 0;
+gdjs.IntroCode.GDPlayCheezyObjects1.length = 0;
+gdjs.IntroCode.GDPlayCheezyObjects2.length = 0;
 gdjs.IntroCode.GDTitle1Objects1.length = 0;
 gdjs.IntroCode.GDTitle1Objects2.length = 0;
 gdjs.IntroCode.GDTitle2Objects1.length = 0;
@@ -262,6 +300,8 @@ gdjs.IntroCode.GDHouseBalloonObjects1.length = 0;
 gdjs.IntroCode.GDHouseBalloonObjects2.length = 0;
 gdjs.IntroCode.GDPestzControlObjects1.length = 0;
 gdjs.IntroCode.GDPestzControlObjects2.length = 0;
+gdjs.IntroCode.GDCheezyPathObjects1.length = 0;
+gdjs.IntroCode.GDCheezyPathObjects2.length = 0;
 gdjs.IntroCode.GDDemoObjects1.length = 0;
 gdjs.IntroCode.GDDemoObjects2.length = 0;
 gdjs.IntroCode.GDBuyMeObjects1.length = 0;
