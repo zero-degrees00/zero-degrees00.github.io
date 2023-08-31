@@ -25,6 +25,8 @@ gdjs.IntroCode.GDDemoObjects1= [];
 gdjs.IntroCode.GDDemoObjects2= [];
 gdjs.IntroCode.GDBuyMeObjects1= [];
 gdjs.IntroCode.GDBuyMeObjects2= [];
+gdjs.IntroCode.GDQRObjects1= [];
+gdjs.IntroCode.GDQRObjects2= [];
 
 
 gdjs.IntroCode.mapOfGDgdjs_9546IntroCode_9546GDPizzaObjects1Objects = Hashtable.newFrom({"Pizza": gdjs.IntroCode.GDPizzaObjects1});
@@ -65,7 +67,7 @@ isConditionTrue_0 = false;
 isConditionTrue_0 = gdjs.evtTools.input.isMouseButtonReleased(runtimeScene, "Left");
 if (isConditionTrue_0) {
 isConditionTrue_0 = false;
-{isConditionTrue_0 = runtimeScene.getOnceTriggers().triggerOnce(14843900);
+{isConditionTrue_0 = runtimeScene.getOnceTriggers().triggerOnce(11811140);
 }
 }
 }
@@ -88,7 +90,7 @@ isConditionTrue_0 = false;
 isConditionTrue_0 = gdjs.evtTools.input.isMouseButtonReleased(runtimeScene, "Left");
 if (isConditionTrue_0) {
 isConditionTrue_0 = false;
-{isConditionTrue_0 = runtimeScene.getOnceTriggers().triggerOnce(15583428);
+{isConditionTrue_0 = runtimeScene.getOnceTriggers().triggerOnce(11812132);
 }
 }
 }
@@ -111,7 +113,7 @@ isConditionTrue_0 = false;
 isConditionTrue_0 = gdjs.evtTools.input.isMouseButtonReleased(runtimeScene, "Left");
 if (isConditionTrue_0) {
 isConditionTrue_0 = false;
-{isConditionTrue_0 = runtimeScene.getOnceTriggers().triggerOnce(15075156);
+{isConditionTrue_0 = runtimeScene.getOnceTriggers().triggerOnce(11813060);
 }
 }
 }
@@ -134,7 +136,7 @@ isConditionTrue_0 = false;
 isConditionTrue_0 = gdjs.evtTools.input.isMouseButtonReleased(runtimeScene, "Left");
 if (isConditionTrue_0) {
 isConditionTrue_0 = false;
-{isConditionTrue_0 = runtimeScene.getOnceTriggers().triggerOnce(11841780);
+{isConditionTrue_0 = runtimeScene.getOnceTriggers().triggerOnce(11814444);
 }
 }
 }
@@ -157,7 +159,7 @@ isConditionTrue_0 = false;
 isConditionTrue_0 = gdjs.evtTools.input.isMouseButtonReleased(runtimeScene, "Left");
 if (isConditionTrue_0) {
 isConditionTrue_0 = false;
-{isConditionTrue_0 = runtimeScene.getOnceTriggers().triggerOnce(15026628);
+{isConditionTrue_0 = runtimeScene.getOnceTriggers().triggerOnce(11815884);
 }
 }
 }
@@ -306,6 +308,8 @@ gdjs.IntroCode.GDDemoObjects1.length = 0;
 gdjs.IntroCode.GDDemoObjects2.length = 0;
 gdjs.IntroCode.GDBuyMeObjects1.length = 0;
 gdjs.IntroCode.GDBuyMeObjects2.length = 0;
+gdjs.IntroCode.GDQRObjects1.length = 0;
+gdjs.IntroCode.GDQRObjects2.length = 0;
 
 gdjs.IntroCode.eventsList0(runtimeScene);
 
