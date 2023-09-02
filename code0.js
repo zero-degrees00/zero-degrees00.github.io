@@ -11,6 +11,14 @@ gdjs.IntroCode.GDPlayPestzObjects1= [];
 gdjs.IntroCode.GDPlayPestzObjects2= [];
 gdjs.IntroCode.GDPlayCheezyObjects1= [];
 gdjs.IntroCode.GDPlayCheezyObjects2= [];
+gdjs.IntroCode.GDPlaySeekObjects1= [];
+gdjs.IntroCode.GDPlaySeekObjects2= [];
+gdjs.IntroCode.GDPlaySeaObjects1= [];
+gdjs.IntroCode.GDPlaySeaObjects2= [];
+gdjs.IntroCode.GDPlaySpinObjects1= [];
+gdjs.IntroCode.GDPlaySpinObjects2= [];
+gdjs.IntroCode.GDMobileObjects1= [];
+gdjs.IntroCode.GDMobileObjects2= [];
 gdjs.IntroCode.GDTitle1Objects1= [];
 gdjs.IntroCode.GDTitle1Objects2= [];
 gdjs.IntroCode.GDTitle2Objects1= [];
@@ -21,8 +29,16 @@ gdjs.IntroCode.GDPestzControlObjects1= [];
 gdjs.IntroCode.GDPestzControlObjects2= [];
 gdjs.IntroCode.GDCheezyPathObjects1= [];
 gdjs.IntroCode.GDCheezyPathObjects2= [];
+gdjs.IntroCode.GDSeekNTapObjects1= [];
+gdjs.IntroCode.GDSeekNTapObjects2= [];
+gdjs.IntroCode.GDSeaSnagObjects1= [];
+gdjs.IntroCode.GDSeaSnagObjects2= [];
+gdjs.IntroCode.GDSpinASpaceObjects1= [];
+gdjs.IntroCode.GDSpinASpaceObjects2= [];
 gdjs.IntroCode.GDDemoObjects1= [];
 gdjs.IntroCode.GDDemoObjects2= [];
+gdjs.IntroCode.GDMobile_9595APKsObjects1= [];
+gdjs.IntroCode.GDMobile_9595APKsObjects2= [];
 gdjs.IntroCode.GDBuyMeObjects1= [];
 gdjs.IntroCode.GDBuyMeObjects2= [];
 gdjs.IntroCode.GDQRObjects1= [];
@@ -34,6 +50,10 @@ gdjs.IntroCode.mapOfGDgdjs_9546IntroCode_9546GDPlayDemoObjects1Objects = Hashtab
 gdjs.IntroCode.mapOfGDgdjs_9546IntroCode_9546GDPlayHouseObjects1Objects = Hashtable.newFrom({"PlayHouse": gdjs.IntroCode.GDPlayHouseObjects1});
 gdjs.IntroCode.mapOfGDgdjs_9546IntroCode_9546GDPlayPestzObjects1Objects = Hashtable.newFrom({"PlayPestz": gdjs.IntroCode.GDPlayPestzObjects1});
 gdjs.IntroCode.mapOfGDgdjs_9546IntroCode_9546GDPlayCheezyObjects1Objects = Hashtable.newFrom({"PlayCheezy": gdjs.IntroCode.GDPlayCheezyObjects1});
+gdjs.IntroCode.mapOfGDgdjs_9546IntroCode_9546GDPlaySeekObjects1Objects = Hashtable.newFrom({"PlaySeek": gdjs.IntroCode.GDPlaySeekObjects1});
+gdjs.IntroCode.mapOfGDgdjs_9546IntroCode_9546GDPlaySeaObjects1Objects = Hashtable.newFrom({"PlaySea": gdjs.IntroCode.GDPlaySeaObjects1});
+gdjs.IntroCode.mapOfGDgdjs_9546IntroCode_9546GDPlaySpinObjects1Objects = Hashtable.newFrom({"PlaySpin": gdjs.IntroCode.GDPlaySpinObjects1});
+gdjs.IntroCode.mapOfGDgdjs_9546IntroCode_9546GDMobile_95959595APKsObjects1Objects = Hashtable.newFrom({"Mobile_APKs": gdjs.IntroCode.GDMobile_9595APKsObjects1});
 gdjs.IntroCode.mapOfGDgdjs_9546IntroCode_9546GDPizzaObjects1Objects = Hashtable.newFrom({"Pizza": gdjs.IntroCode.GDPizzaObjects1});
 gdjs.IntroCode.mapOfGDgdjs_9546IntroCode_9546GDPizzaObjects1Objects = Hashtable.newFrom({"Pizza": gdjs.IntroCode.GDPizzaObjects1});
 gdjs.IntroCode.eventsList0 = function(runtimeScene) {
@@ -46,10 +66,10 @@ isConditionTrue_0 = false;
 isConditionTrue_0 = gdjs.evtTools.runtimeScene.sceneJustBegins(runtimeScene);
 if (isConditionTrue_0) {
 gdjs.copyArray(runtimeScene.getObjects("BuyMe"), gdjs.IntroCode.GDBuyMeObjects1);
-{gdjs.evtTools.sound.playSound(runtimeScene, "Komiku_-_12_-_Bicycle.mp3", true, 100, 1);
-}{for(var i = 0, len = gdjs.IntroCode.GDBuyMeObjects1.length ;i < len;++i) {
+{for(var i = 0, len = gdjs.IntroCode.GDBuyMeObjects1.length ;i < len;++i) {
     gdjs.IntroCode.GDBuyMeObjects1[i].hide();
 }
+}{gdjs.evtTools.sound.playSoundOnChannel(runtimeScene, "Komiku_-_12_-_Bicycle.mp3", 1, true, 100, 1);
 }}
 
 }
@@ -67,7 +87,7 @@ isConditionTrue_0 = false;
 isConditionTrue_0 = gdjs.evtTools.input.isMouseButtonReleased(runtimeScene, "Left");
 if (isConditionTrue_0) {
 isConditionTrue_0 = false;
-{isConditionTrue_0 = runtimeScene.getOnceTriggers().triggerOnce(14679140);
+{isConditionTrue_0 = runtimeScene.getOnceTriggers().triggerOnce(9480476);
 }
 }
 }
@@ -90,7 +110,7 @@ isConditionTrue_0 = false;
 isConditionTrue_0 = gdjs.evtTools.input.isMouseButtonReleased(runtimeScene, "Left");
 if (isConditionTrue_0) {
 isConditionTrue_0 = false;
-{isConditionTrue_0 = runtimeScene.getOnceTriggers().triggerOnce(14845892);
+{isConditionTrue_0 = runtimeScene.getOnceTriggers().triggerOnce(9481780);
 }
 }
 }
@@ -113,12 +133,13 @@ isConditionTrue_0 = false;
 isConditionTrue_0 = gdjs.evtTools.input.isMouseButtonReleased(runtimeScene, "Left");
 if (isConditionTrue_0) {
 isConditionTrue_0 = false;
-{isConditionTrue_0 = runtimeScene.getOnceTriggers().triggerOnce(14992788);
+{isConditionTrue_0 = runtimeScene.getOnceTriggers().triggerOnce(9483084);
 }
 }
 }
 if (isConditionTrue_0) {
-{gdjs.evtTools.window.openURL("https://primordialgamez.github.io/HouseBalloon", runtimeScene);
+{gdjs.evtTools.sound.pauseSoundOnChannel(runtimeScene, 1);
+}{gdjs.evtTools.window.openURL("https://primordialgamez.github.io/HouseBalloon", runtimeScene);
 }}
 
 }
@@ -136,12 +157,13 @@ isConditionTrue_0 = false;
 isConditionTrue_0 = gdjs.evtTools.input.isMouseButtonReleased(runtimeScene, "Left");
 if (isConditionTrue_0) {
 isConditionTrue_0 = false;
-{isConditionTrue_0 = runtimeScene.getOnceTriggers().triggerOnce(14900140);
+{isConditionTrue_0 = runtimeScene.getOnceTriggers().triggerOnce(9484084);
 }
 }
 }
 if (isConditionTrue_0) {
-{gdjs.evtTools.window.openURL("https://primordialgamez.github.io/PestzControl", runtimeScene);
+{gdjs.evtTools.sound.pauseSoundOnChannel(runtimeScene, 1);
+}{gdjs.evtTools.window.openURL("https://primordialgamez.github.io/PestzControl", runtimeScene);
 }}
 
 }
@@ -159,12 +181,108 @@ isConditionTrue_0 = false;
 isConditionTrue_0 = gdjs.evtTools.input.isMouseButtonReleased(runtimeScene, "Left");
 if (isConditionTrue_0) {
 isConditionTrue_0 = false;
-{isConditionTrue_0 = runtimeScene.getOnceTriggers().triggerOnce(14676020);
+{isConditionTrue_0 = runtimeScene.getOnceTriggers().triggerOnce(8307492);
 }
 }
 }
 if (isConditionTrue_0) {
-{gdjs.evtTools.window.openURL("https://primordialgamez.github.io/CheezyPath", runtimeScene);
+{gdjs.evtTools.sound.pauseSoundOnChannel(runtimeScene, 1);
+}{gdjs.evtTools.window.openURL("https://primordialgamez.github.io/CheezyPath", runtimeScene);
+}}
+
+}
+
+
+{
+
+gdjs.copyArray(runtimeScene.getObjects("PlaySeek"), gdjs.IntroCode.GDPlaySeekObjects1);
+
+let isConditionTrue_0 = false;
+isConditionTrue_0 = false;
+isConditionTrue_0 = gdjs.evtTools.input.cursorOnObject(gdjs.IntroCode.mapOfGDgdjs_9546IntroCode_9546GDPlaySeekObjects1Objects, runtimeScene, true, false);
+if (isConditionTrue_0) {
+isConditionTrue_0 = false;
+isConditionTrue_0 = gdjs.evtTools.input.isMouseButtonReleased(runtimeScene, "Left");
+if (isConditionTrue_0) {
+isConditionTrue_0 = false;
+{isConditionTrue_0 = runtimeScene.getOnceTriggers().triggerOnce(8300572);
+}
+}
+}
+if (isConditionTrue_0) {
+{gdjs.evtTools.sound.pauseSoundOnChannel(runtimeScene, 1);
+}{gdjs.evtTools.window.openURL("https://primordialgamez.github.io/SeekNTap", runtimeScene);
+}}
+
+}
+
+
+{
+
+gdjs.copyArray(runtimeScene.getObjects("PlaySea"), gdjs.IntroCode.GDPlaySeaObjects1);
+
+let isConditionTrue_0 = false;
+isConditionTrue_0 = false;
+isConditionTrue_0 = gdjs.evtTools.input.cursorOnObject(gdjs.IntroCode.mapOfGDgdjs_9546IntroCode_9546GDPlaySeaObjects1Objects, runtimeScene, true, false);
+if (isConditionTrue_0) {
+isConditionTrue_0 = false;
+isConditionTrue_0 = gdjs.evtTools.input.isMouseButtonReleased(runtimeScene, "Left");
+if (isConditionTrue_0) {
+isConditionTrue_0 = false;
+{isConditionTrue_0 = runtimeScene.getOnceTriggers().triggerOnce(9447868);
+}
+}
+}
+if (isConditionTrue_0) {
+{gdjs.evtTools.sound.pauseSoundOnChannel(runtimeScene, 1);
+}{gdjs.evtTools.window.openURL("https://primordialgamez.github.io/SeaSnag", runtimeScene);
+}}
+
+}
+
+
+{
+
+gdjs.copyArray(runtimeScene.getObjects("PlaySpin"), gdjs.IntroCode.GDPlaySpinObjects1);
+
+let isConditionTrue_0 = false;
+isConditionTrue_0 = false;
+isConditionTrue_0 = gdjs.evtTools.input.cursorOnObject(gdjs.IntroCode.mapOfGDgdjs_9546IntroCode_9546GDPlaySpinObjects1Objects, runtimeScene, true, false);
+if (isConditionTrue_0) {
+isConditionTrue_0 = false;
+isConditionTrue_0 = gdjs.evtTools.input.isMouseButtonReleased(runtimeScene, "Left");
+if (isConditionTrue_0) {
+isConditionTrue_0 = false;
+{isConditionTrue_0 = runtimeScene.getOnceTriggers().triggerOnce(9089092);
+}
+}
+}
+if (isConditionTrue_0) {
+{gdjs.evtTools.sound.pauseSoundOnChannel(runtimeScene, 1);
+}{gdjs.evtTools.window.openURL("https://primordialgamez.github.io/SpinASpace", runtimeScene);
+}}
+
+}
+
+
+{
+
+gdjs.copyArray(runtimeScene.getObjects("Mobile_APKs"), gdjs.IntroCode.GDMobile_9595APKsObjects1);
+
+let isConditionTrue_0 = false;
+isConditionTrue_0 = false;
+isConditionTrue_0 = gdjs.evtTools.input.cursorOnObject(gdjs.IntroCode.mapOfGDgdjs_9546IntroCode_9546GDMobile_95959595APKsObjects1Objects, runtimeScene, true, false);
+if (isConditionTrue_0) {
+isConditionTrue_0 = false;
+isConditionTrue_0 = gdjs.evtTools.input.isMouseButtonReleased(runtimeScene, "Left");
+if (isConditionTrue_0) {
+isConditionTrue_0 = false;
+{isConditionTrue_0 = runtimeScene.getOnceTriggers().triggerOnce(9483612);
+}
+}
+}
+if (isConditionTrue_0) {
+{gdjs.evtTools.window.openURL("https://zero-degrees.itch.io/", runtimeScene);
 }}
 
 }
@@ -183,6 +301,12 @@ gdjs.copyArray(runtimeScene.getObjects("Pizza"), gdjs.IntroCode.GDPizzaObjects1)
 gdjs.copyArray(runtimeScene.getObjects("PlayCheezy"), gdjs.IntroCode.GDPlayCheezyObjects1);
 gdjs.copyArray(runtimeScene.getObjects("PlayHouse"), gdjs.IntroCode.GDPlayHouseObjects1);
 gdjs.copyArray(runtimeScene.getObjects("PlayPestz"), gdjs.IntroCode.GDPlayPestzObjects1);
+gdjs.copyArray(runtimeScene.getObjects("PlaySea"), gdjs.IntroCode.GDPlaySeaObjects1);
+gdjs.copyArray(runtimeScene.getObjects("PlaySeek"), gdjs.IntroCode.GDPlaySeekObjects1);
+gdjs.copyArray(runtimeScene.getObjects("PlaySpin"), gdjs.IntroCode.GDPlaySpinObjects1);
+gdjs.copyArray(runtimeScene.getObjects("SeaSnag"), gdjs.IntroCode.GDSeaSnagObjects1);
+gdjs.copyArray(runtimeScene.getObjects("SeekNTap"), gdjs.IntroCode.GDSeekNTapObjects1);
+gdjs.copyArray(runtimeScene.getObjects("SpinASpace"), gdjs.IntroCode.GDSpinASpaceObjects1);
 gdjs.copyArray(runtimeScene.getObjects("Title1"), gdjs.IntroCode.GDTitle1Objects1);
 gdjs.copyArray(runtimeScene.getObjects("Title2"), gdjs.IntroCode.GDTitle2Objects1);
 gdjs.copyArray(runtimeScene.getObjects("WinterBackground"), gdjs.IntroCode.GDWinterBackgroundObjects1);
@@ -204,6 +328,12 @@ gdjs.copyArray(runtimeScene.getObjects("WinterBackground"), gdjs.IntroCode.GDWin
 }{for(var i = 0, len = gdjs.IntroCode.GDCheezyPathObjects1.length ;i < len;++i) {
     gdjs.IntroCode.GDCheezyPathObjects1[i].setX((( gdjs.IntroCode.GDPlayHouseObjects1.length === 0 ) ? 0 :gdjs.IntroCode.GDPlayHouseObjects1[0].getPointX("")) + (( gdjs.IntroCode.GDPlayHouseObjects1.length === 0 ) ? 0 :gdjs.IntroCode.GDPlayHouseObjects1[0].getWidth()) * 1.5);
 }
+}{for(var i = 0, len = gdjs.IntroCode.GDPlaySeaObjects1.length ;i < len;++i) {
+    gdjs.IntroCode.GDPlaySeaObjects1[i].setX((( gdjs.IntroCode.GDTitle1Objects1.length === 0 ) ? 0 :gdjs.IntroCode.GDTitle1Objects1[0].getX()));
+}
+}{for(var i = 0, len = gdjs.IntroCode.GDSeaSnagObjects1.length ;i < len;++i) {
+    gdjs.IntroCode.GDSeaSnagObjects1[i].setX((( gdjs.IntroCode.GDPlayHouseObjects1.length === 0 ) ? 0 :gdjs.IntroCode.GDPlayHouseObjects1[0].getPointX("")) + (( gdjs.IntroCode.GDPlayHouseObjects1.length === 0 ) ? 0 :gdjs.IntroCode.GDPlayHouseObjects1[0].getWidth()) * 1.5);
+}
 }{for(var i = 0, len = gdjs.IntroCode.GDTitle2Objects1.length ;i < len;++i) {
     gdjs.IntroCode.GDTitle2Objects1[i].setX(gdjs.evtTools.window.getGameResolutionWidth(runtimeScene) / 2 + gdjs.evtTools.window.getGameResolutionWidth(runtimeScene) / 4 - (gdjs.IntroCode.GDTitle2Objects1[i].getWidth()));
 }
@@ -212,6 +342,18 @@ gdjs.copyArray(runtimeScene.getObjects("WinterBackground"), gdjs.IntroCode.GDWin
 }
 }{for(var i = 0, len = gdjs.IntroCode.GDPestzControlObjects1.length ;i < len;++i) {
     gdjs.IntroCode.GDPestzControlObjects1[i].setX((( gdjs.IntroCode.GDPlayPestzObjects1.length === 0 ) ? 0 :gdjs.IntroCode.GDPlayPestzObjects1[0].getPointX("")) + (( gdjs.IntroCode.GDPlayPestzObjects1.length === 0 ) ? 0 :gdjs.IntroCode.GDPlayPestzObjects1[0].getWidth()) * 1.5);
+}
+}{for(var i = 0, len = gdjs.IntroCode.GDPlaySeekObjects1.length ;i < len;++i) {
+    gdjs.IntroCode.GDPlaySeekObjects1[i].setX((( gdjs.IntroCode.GDTitle2Objects1.length === 0 ) ? 0 :gdjs.IntroCode.GDTitle2Objects1[0].getX()));
+}
+}{for(var i = 0, len = gdjs.IntroCode.GDSeekNTapObjects1.length ;i < len;++i) {
+    gdjs.IntroCode.GDSeekNTapObjects1[i].setX((( gdjs.IntroCode.GDPlayPestzObjects1.length === 0 ) ? 0 :gdjs.IntroCode.GDPlayPestzObjects1[0].getPointX("")) + (( gdjs.IntroCode.GDPlayPestzObjects1.length === 0 ) ? 0 :gdjs.IntroCode.GDPlayPestzObjects1[0].getWidth()) * 1.5);
+}
+}{for(var i = 0, len = gdjs.IntroCode.GDPlaySpinObjects1.length ;i < len;++i) {
+    gdjs.IntroCode.GDPlaySpinObjects1[i].setX((( gdjs.IntroCode.GDTitle2Objects1.length === 0 ) ? 0 :gdjs.IntroCode.GDTitle2Objects1[0].getX()));
+}
+}{for(var i = 0, len = gdjs.IntroCode.GDSpinASpaceObjects1.length ;i < len;++i) {
+    gdjs.IntroCode.GDSpinASpaceObjects1[i].setX((( gdjs.IntroCode.GDPlayPestzObjects1.length === 0 ) ? 0 :gdjs.IntroCode.GDPlayPestzObjects1[0].getPointX("")) + (( gdjs.IntroCode.GDPlayPestzObjects1.length === 0 ) ? 0 :gdjs.IntroCode.GDPlayPestzObjects1[0].getWidth()) * 1.5);
 }
 }{for(var i = 0, len = gdjs.IntroCode.GDPizzaObjects1.length ;i < len;++i) {
     gdjs.IntroCode.GDPizzaObjects1[i].setX(gdjs.evtTools.window.getGameResolutionWidth(runtimeScene) / 2 - (gdjs.IntroCode.GDPizzaObjects1[i].getWidth()));
@@ -294,6 +436,14 @@ gdjs.IntroCode.GDPlayPestzObjects1.length = 0;
 gdjs.IntroCode.GDPlayPestzObjects2.length = 0;
 gdjs.IntroCode.GDPlayCheezyObjects1.length = 0;
 gdjs.IntroCode.GDPlayCheezyObjects2.length = 0;
+gdjs.IntroCode.GDPlaySeekObjects1.length = 0;
+gdjs.IntroCode.GDPlaySeekObjects2.length = 0;
+gdjs.IntroCode.GDPlaySeaObjects1.length = 0;
+gdjs.IntroCode.GDPlaySeaObjects2.length = 0;
+gdjs.IntroCode.GDPlaySpinObjects1.length = 0;
+gdjs.IntroCode.GDPlaySpinObjects2.length = 0;
+gdjs.IntroCode.GDMobileObjects1.length = 0;
+gdjs.IntroCode.GDMobileObjects2.length = 0;
 gdjs.IntroCode.GDTitle1Objects1.length = 0;
 gdjs.IntroCode.GDTitle1Objects2.length = 0;
 gdjs.IntroCode.GDTitle2Objects1.length = 0;
@@ -304,8 +454,16 @@ gdjs.IntroCode.GDPestzControlObjects1.length = 0;
 gdjs.IntroCode.GDPestzControlObjects2.length = 0;
 gdjs.IntroCode.GDCheezyPathObjects1.length = 0;
 gdjs.IntroCode.GDCheezyPathObjects2.length = 0;
+gdjs.IntroCode.GDSeekNTapObjects1.length = 0;
+gdjs.IntroCode.GDSeekNTapObjects2.length = 0;
+gdjs.IntroCode.GDSeaSnagObjects1.length = 0;
+gdjs.IntroCode.GDSeaSnagObjects2.length = 0;
+gdjs.IntroCode.GDSpinASpaceObjects1.length = 0;
+gdjs.IntroCode.GDSpinASpaceObjects2.length = 0;
 gdjs.IntroCode.GDDemoObjects1.length = 0;
 gdjs.IntroCode.GDDemoObjects2.length = 0;
+gdjs.IntroCode.GDMobile_9595APKsObjects1.length = 0;
+gdjs.IntroCode.GDMobile_9595APKsObjects2.length = 0;
 gdjs.IntroCode.GDBuyMeObjects1.length = 0;
 gdjs.IntroCode.GDBuyMeObjects2.length = 0;
 gdjs.IntroCode.GDQRObjects1.length = 0;
