@@ -53,7 +53,7 @@ gdjs.IntroCode.mapOfGDgdjs_9546IntroCode_9546GDPlayCheezyObjects1Objects = Hasht
 gdjs.IntroCode.mapOfGDgdjs_9546IntroCode_9546GDPlaySeekObjects1Objects = Hashtable.newFrom({"PlaySeek": gdjs.IntroCode.GDPlaySeekObjects1});
 gdjs.IntroCode.mapOfGDgdjs_9546IntroCode_9546GDPlaySeaObjects1Objects = Hashtable.newFrom({"PlaySea": gdjs.IntroCode.GDPlaySeaObjects1});
 gdjs.IntroCode.mapOfGDgdjs_9546IntroCode_9546GDPlaySpinObjects1Objects = Hashtable.newFrom({"PlaySpin": gdjs.IntroCode.GDPlaySpinObjects1});
-gdjs.IntroCode.mapOfGDgdjs_9546IntroCode_9546GDMobile_95959595APKsObjects1Objects = Hashtable.newFrom({"Mobile_APKs": gdjs.IntroCode.GDMobile_9595APKsObjects1});
+gdjs.IntroCode.mapOfGDgdjs_9546IntroCode_9546GDMobileObjects1Objects = Hashtable.newFrom({"Mobile": gdjs.IntroCode.GDMobileObjects1});
 gdjs.IntroCode.mapOfGDgdjs_9546IntroCode_9546GDPizzaObjects1Objects = Hashtable.newFrom({"Pizza": gdjs.IntroCode.GDPizzaObjects1});
 gdjs.IntroCode.mapOfGDgdjs_9546IntroCode_9546GDPizzaObjects1Objects = Hashtable.newFrom({"Pizza": gdjs.IntroCode.GDPizzaObjects1});
 gdjs.IntroCode.eventsList0 = function(runtimeScene) {
@@ -87,7 +87,7 @@ isConditionTrue_0 = false;
 isConditionTrue_0 = gdjs.evtTools.input.isMouseButtonReleased(runtimeScene, "Left");
 if (isConditionTrue_0) {
 isConditionTrue_0 = false;
-{isConditionTrue_0 = runtimeScene.getOnceTriggers().triggerOnce(9480476);
+{isConditionTrue_0 = runtimeScene.getOnceTriggers().triggerOnce(9812188);
 }
 }
 }
@@ -110,7 +110,7 @@ isConditionTrue_0 = false;
 isConditionTrue_0 = gdjs.evtTools.input.isMouseButtonReleased(runtimeScene, "Left");
 if (isConditionTrue_0) {
 isConditionTrue_0 = false;
-{isConditionTrue_0 = runtimeScene.getOnceTriggers().triggerOnce(9481780);
+{isConditionTrue_0 = runtimeScene.getOnceTriggers().triggerOnce(9812796);
 }
 }
 }
@@ -133,7 +133,7 @@ isConditionTrue_0 = false;
 isConditionTrue_0 = gdjs.evtTools.input.isMouseButtonReleased(runtimeScene, "Left");
 if (isConditionTrue_0) {
 isConditionTrue_0 = false;
-{isConditionTrue_0 = runtimeScene.getOnceTriggers().triggerOnce(9483084);
+{isConditionTrue_0 = runtimeScene.getOnceTriggers().triggerOnce(9814116);
 }
 }
 }
@@ -157,7 +157,7 @@ isConditionTrue_0 = false;
 isConditionTrue_0 = gdjs.evtTools.input.isMouseButtonReleased(runtimeScene, "Left");
 if (isConditionTrue_0) {
 isConditionTrue_0 = false;
-{isConditionTrue_0 = runtimeScene.getOnceTriggers().triggerOnce(9484084);
+{isConditionTrue_0 = runtimeScene.getOnceTriggers().triggerOnce(9815284);
 }
 }
 }
@@ -181,7 +181,7 @@ isConditionTrue_0 = false;
 isConditionTrue_0 = gdjs.evtTools.input.isMouseButtonReleased(runtimeScene, "Left");
 if (isConditionTrue_0) {
 isConditionTrue_0 = false;
-{isConditionTrue_0 = runtimeScene.getOnceTriggers().triggerOnce(8307492);
+{isConditionTrue_0 = runtimeScene.getOnceTriggers().triggerOnce(9816492);
 }
 }
 }
@@ -205,7 +205,7 @@ isConditionTrue_0 = false;
 isConditionTrue_0 = gdjs.evtTools.input.isMouseButtonReleased(runtimeScene, "Left");
 if (isConditionTrue_0) {
 isConditionTrue_0 = false;
-{isConditionTrue_0 = runtimeScene.getOnceTriggers().triggerOnce(8300572);
+{isConditionTrue_0 = runtimeScene.getOnceTriggers().triggerOnce(9817244);
 }
 }
 }
@@ -229,7 +229,7 @@ isConditionTrue_0 = false;
 isConditionTrue_0 = gdjs.evtTools.input.isMouseButtonReleased(runtimeScene, "Left");
 if (isConditionTrue_0) {
 isConditionTrue_0 = false;
-{isConditionTrue_0 = runtimeScene.getOnceTriggers().triggerOnce(9447868);
+{isConditionTrue_0 = runtimeScene.getOnceTriggers().triggerOnce(9818812);
 }
 }
 }
@@ -253,7 +253,7 @@ isConditionTrue_0 = false;
 isConditionTrue_0 = gdjs.evtTools.input.isMouseButtonReleased(runtimeScene, "Left");
 if (isConditionTrue_0) {
 isConditionTrue_0 = false;
-{isConditionTrue_0 = runtimeScene.getOnceTriggers().triggerOnce(9089092);
+{isConditionTrue_0 = runtimeScene.getOnceTriggers().triggerOnce(9819572);
 }
 }
 }
@@ -267,17 +267,17 @@ if (isConditionTrue_0) {
 
 {
 
-gdjs.copyArray(runtimeScene.getObjects("Mobile_APKs"), gdjs.IntroCode.GDMobile_9595APKsObjects1);
+gdjs.copyArray(runtimeScene.getObjects("Mobile"), gdjs.IntroCode.GDMobileObjects1);
 
 let isConditionTrue_0 = false;
 isConditionTrue_0 = false;
-isConditionTrue_0 = gdjs.evtTools.input.cursorOnObject(gdjs.IntroCode.mapOfGDgdjs_9546IntroCode_9546GDMobile_95959595APKsObjects1Objects, runtimeScene, true, false);
+isConditionTrue_0 = gdjs.evtTools.input.cursorOnObject(gdjs.IntroCode.mapOfGDgdjs_9546IntroCode_9546GDMobileObjects1Objects, runtimeScene, true, false);
 if (isConditionTrue_0) {
 isConditionTrue_0 = false;
 isConditionTrue_0 = gdjs.evtTools.input.isMouseButtonReleased(runtimeScene, "Left");
 if (isConditionTrue_0) {
 isConditionTrue_0 = false;
-{isConditionTrue_0 = runtimeScene.getOnceTriggers().triggerOnce(9483612);
+{isConditionTrue_0 = runtimeScene.getOnceTriggers().triggerOnce(9821180);
 }
 }
 }
