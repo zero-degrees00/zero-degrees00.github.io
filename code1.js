@@ -69,8 +69,6 @@ gdjs.MainCode.GDControlsObjects3= [];
 
 gdjs.MainCode.mapOfEmptyGDGreenUfoObjectsEmptyGDGreenUfo2ObjectsEmptyGDGreenUfo3Objects = Hashtable.newFrom({"GreenUfo": [], "GreenUfo2": [], "GreenUfo3": []});
 gdjs.MainCode.mapOfEmptyGDBulletObjects = Hashtable.newFrom({"Bullet": []});
-gdjs.MainCode.mapOfGDgdjs_9546MainCode_9546GDBulletObjects2Objects = Hashtable.newFrom({"Bullet": gdjs.MainCode.GDBulletObjects2});
-gdjs.MainCode.mapOfEmptyGDBulletObjects = Hashtable.newFrom({"Bullet": []});
 gdjs.MainCode.mapOfGDgdjs_9546MainCode_9546GDBulletObjects1Objects = Hashtable.newFrom({"Bullet": gdjs.MainCode.GDBulletObjects1});
 gdjs.MainCode.eventsList0 = function(runtimeScene) {
 
@@ -79,7 +77,23 @@ gdjs.MainCode.eventsList0 = function(runtimeScene) {
 
 let isConditionTrue_0 = false;
 isConditionTrue_0 = false;
-isConditionTrue_0 = gdjs.evtTools.input.isKeyPressed(runtimeScene, "Up");
+{let isConditionTrue_1 = false;
+isConditionTrue_0 = false;
+{
+isConditionTrue_1 = gdjs.evtTools.input.isKeyPressed(runtimeScene, "Up");
+if(isConditionTrue_1) {
+    isConditionTrue_0 = true;
+}
+}
+{
+isConditionTrue_1 = gdjs.evtTools.input.isKeyPressed(runtimeScene, "w");
+if(isConditionTrue_1) {
+    isConditionTrue_0 = true;
+}
+}
+{
+}
+}
 if (isConditionTrue_0) {
 gdjs.copyArray(runtimeScene.getObjects("NativeAngry"), gdjs.MainCode.GDNativeAngryObjects2);
 {for(var i = 0, len = gdjs.MainCode.GDNativeAngryObjects2.length ;i < len;++i) {
@@ -95,7 +109,67 @@ gdjs.copyArray(runtimeScene.getObjects("NativeAngry"), gdjs.MainCode.GDNativeAng
 
 let isConditionTrue_0 = false;
 isConditionTrue_0 = false;
-isConditionTrue_0 = gdjs.evtTools.input.isKeyPressed(runtimeScene, "Left");
+isConditionTrue_0 = gdjs.evtTools.input.isKeyPressed(runtimeScene, "a");
+if (isConditionTrue_0) {
+gdjs.copyArray(runtimeScene.getObjects("NativeAngry"), gdjs.MainCode.GDNativeAngryObjects2);
+{for(var i = 0, len = gdjs.MainCode.GDNativeAngryObjects2.length ;i < len;++i) {
+    gdjs.MainCode.GDNativeAngryObjects2[i].getBehavior("PlatformerObject").simulateControl("Left");
+}
+}}
+
+}
+
+
+{
+
+
+let isConditionTrue_0 = false;
+isConditionTrue_0 = false;
+isConditionTrue_0 = gdjs.evtTools.input.isKeyPressed(runtimeScene, "d");
+if (isConditionTrue_0) {
+gdjs.copyArray(runtimeScene.getObjects("NativeAngry"), gdjs.MainCode.GDNativeAngryObjects2);
+{for(var i = 0, len = gdjs.MainCode.GDNativeAngryObjects2.length ;i < len;++i) {
+    gdjs.MainCode.GDNativeAngryObjects2[i].getBehavior("PlatformerObject").simulateControl("Right");
+}
+}}
+
+}
+
+
+{
+
+
+let isConditionTrue_0 = false;
+isConditionTrue_0 = false;
+{let isConditionTrue_1 = false;
+isConditionTrue_0 = false;
+{
+isConditionTrue_1 = gdjs.evtTools.input.isKeyPressed(runtimeScene, "Left");
+if(isConditionTrue_1) {
+    isConditionTrue_0 = true;
+}
+}
+{
+isConditionTrue_1 = gdjs.evtTools.input.isKeyPressed(runtimeScene, "a");
+if(isConditionTrue_1) {
+    isConditionTrue_0 = true;
+}
+}
+{
+isConditionTrue_1 = gdjs.evtTools.input.isKeyPressed(runtimeScene, "Right");
+if(isConditionTrue_1) {
+    isConditionTrue_0 = true;
+}
+}
+{
+isConditionTrue_1 = gdjs.evtTools.input.isKeyPressed(runtimeScene, "d");
+if(isConditionTrue_1) {
+    isConditionTrue_0 = true;
+}
+}
+{
+}
+}
 if (isConditionTrue_0) {
 gdjs.copyArray(runtimeScene.getObjects("NativeAngry"), gdjs.MainCode.GDNativeAngryObjects2);
 {for(var i = 0, len = gdjs.MainCode.GDNativeAngryObjects2.length ;i < len;++i) {
@@ -111,71 +185,53 @@ gdjs.copyArray(runtimeScene.getObjects("NativeAngry"), gdjs.MainCode.GDNativeAng
 
 let isConditionTrue_0 = false;
 isConditionTrue_0 = false;
-isConditionTrue_0 = gdjs.evtTools.input.isKeyPressed(runtimeScene, "Right");
-if (isConditionTrue_0) {
-gdjs.copyArray(runtimeScene.getObjects("NativeAngry"), gdjs.MainCode.GDNativeAngryObjects2);
-{for(var i = 0, len = gdjs.MainCode.GDNativeAngryObjects2.length ;i < len;++i) {
-    gdjs.MainCode.GDNativeAngryObjects2[i].setAnimationName("Walk");
-}
-}}
-
-}
-
-
-{
-
-
-let isConditionTrue_0 = false;
+{let isConditionTrue_1 = false;
 isConditionTrue_0 = false;
-isConditionTrue_0 = gdjs.evtTools.input.wasKeyReleased(runtimeScene, "Right");
-if (isConditionTrue_0) {
-gdjs.copyArray(runtimeScene.getObjects("NativeAngry"), gdjs.MainCode.GDNativeAngryObjects2);
-{for(var i = 0, len = gdjs.MainCode.GDNativeAngryObjects2.length ;i < len;++i) {
-    gdjs.MainCode.GDNativeAngryObjects2[i].setAnimationName("Idle");
-}
-}}
-
-}
-
-
 {
-
-
-let isConditionTrue_0 = false;
-isConditionTrue_0 = false;
-isConditionTrue_0 = gdjs.evtTools.input.wasKeyReleased(runtimeScene, "Left");
-if (isConditionTrue_0) {
-gdjs.copyArray(runtimeScene.getObjects("NativeAngry"), gdjs.MainCode.GDNativeAngryObjects2);
-{for(var i = 0, len = gdjs.MainCode.GDNativeAngryObjects2.length ;i < len;++i) {
-    gdjs.MainCode.GDNativeAngryObjects2[i].setAnimationName("Idle");
+isConditionTrue_1 = gdjs.evtTools.input.wasKeyReleased(runtimeScene, "Right");
+if(isConditionTrue_1) {
+    isConditionTrue_0 = true;
 }
-}}
-
 }
-
-
 {
-
-
-let isConditionTrue_0 = false;
-isConditionTrue_0 = false;
-isConditionTrue_0 = gdjs.evtTools.input.wasKeyReleased(runtimeScene, "LControl");
-if (isConditionTrue_0) {
-gdjs.copyArray(runtimeScene.getObjects("NativeAngry"), gdjs.MainCode.GDNativeAngryObjects2);
-{for(var i = 0, len = gdjs.MainCode.GDNativeAngryObjects2.length ;i < len;++i) {
-    gdjs.MainCode.GDNativeAngryObjects2[i].setAnimationName("Idle");
+isConditionTrue_1 = gdjs.evtTools.input.wasKeyReleased(runtimeScene, "d");
+if(isConditionTrue_1) {
+    isConditionTrue_0 = true;
 }
-}}
-
 }
-
-
 {
-
-
-let isConditionTrue_0 = false;
-isConditionTrue_0 = false;
-isConditionTrue_0 = gdjs.evtTools.input.wasKeyReleased(runtimeScene, "RControl");
+isConditionTrue_1 = gdjs.evtTools.input.wasKeyReleased(runtimeScene, "Left");
+if(isConditionTrue_1) {
+    isConditionTrue_0 = true;
+}
+}
+{
+isConditionTrue_1 = gdjs.evtTools.input.wasKeyReleased(runtimeScene, "a");
+if(isConditionTrue_1) {
+    isConditionTrue_0 = true;
+}
+}
+{
+isConditionTrue_1 = gdjs.evtTools.input.wasKeyReleased(runtimeScene, "LControl");
+if(isConditionTrue_1) {
+    isConditionTrue_0 = true;
+}
+}
+{
+isConditionTrue_1 = gdjs.evtTools.input.wasKeyReleased(runtimeScene, "RControl");
+if(isConditionTrue_1) {
+    isConditionTrue_0 = true;
+}
+}
+{
+isConditionTrue_1 = gdjs.evtTools.input.isMouseButtonReleased(runtimeScene, "Left");
+if(isConditionTrue_1) {
+    isConditionTrue_0 = true;
+}
+}
+{
+}
+}
 if (isConditionTrue_0) {
 gdjs.copyArray(runtimeScene.getObjects("NativeAngry"), gdjs.MainCode.GDNativeAngryObjects2);
 {for(var i = 0, len = gdjs.MainCode.GDNativeAngryObjects2.length ;i < len;++i) {
@@ -190,43 +246,36 @@ gdjs.copyArray(runtimeScene.getObjects("NativeAngry"), gdjs.MainCode.GDNativeAng
 
 
 let isConditionTrue_0 = false;
-isConditionTrue_0 = false;
-isConditionTrue_0 = gdjs.evtTools.input.isKeyPressed(runtimeScene, "RControl");
-if (isConditionTrue_0) {
 isConditionTrue_0 = false;
 isConditionTrue_0 = gdjs.evtTools.object.getSceneInstancesCount((typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : runtimeScene), gdjs.MainCode.mapOfEmptyGDBulletObjects) < 3;
 if (isConditionTrue_0) {
 isConditionTrue_0 = false;
-{isConditionTrue_0 = runtimeScene.getOnceTriggers().triggerOnce(9899292);
-}
-}
-}
-if (isConditionTrue_0) {
-gdjs.copyArray(runtimeScene.getObjects("NativeAngry"), gdjs.MainCode.GDNativeAngryObjects2);
-gdjs.MainCode.GDBulletObjects2.length = 0;
-
-{gdjs.evtTools.object.createObjectOnScene((typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : runtimeScene), gdjs.MainCode.mapOfGDgdjs_9546MainCode_9546GDBulletObjects2Objects, (( gdjs.MainCode.GDNativeAngryObjects2.length === 0 ) ? 0 :gdjs.MainCode.GDNativeAngryObjects2[0].getCenterXInScene()), (( gdjs.MainCode.GDNativeAngryObjects2.length === 0 ) ? 0 :gdjs.MainCode.GDNativeAngryObjects2[0].getCenterYInScene()), "");
-}{for(var i = 0, len = gdjs.MainCode.GDNativeAngryObjects2.length ;i < len;++i) {
-    gdjs.MainCode.GDNativeAngryObjects2[i].setAnimationName("Attack");
-}
-}{gdjs.evtTools.sound.playSound(runtimeScene, "assets\\NativeFire.wav", false, 100, 1);
-}}
-
-}
-
-
+{let isConditionTrue_1 = false;
+isConditionTrue_0 = false;
 {
-
-
-let isConditionTrue_0 = false;
-isConditionTrue_0 = false;
-isConditionTrue_0 = gdjs.evtTools.input.isKeyPressed(runtimeScene, "LControl");
+isConditionTrue_1 = gdjs.evtTools.input.isKeyPressed(runtimeScene, "RControl");
+if(isConditionTrue_1) {
+    isConditionTrue_0 = true;
+}
+}
+{
+isConditionTrue_1 = gdjs.evtTools.input.isKeyPressed(runtimeScene, "LControl");
+if(isConditionTrue_1) {
+    isConditionTrue_0 = true;
+}
+}
+{
+isConditionTrue_1 = gdjs.evtTools.input.isMouseButtonPressed(runtimeScene, "Left");
+if(isConditionTrue_1) {
+    isConditionTrue_0 = true;
+}
+}
+{
+}
+}
 if (isConditionTrue_0) {
 isConditionTrue_0 = false;
-isConditionTrue_0 = gdjs.evtTools.object.getSceneInstancesCount((typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : runtimeScene), gdjs.MainCode.mapOfEmptyGDBulletObjects) < 3;
-if (isConditionTrue_0) {
-isConditionTrue_0 = false;
-{isConditionTrue_0 = runtimeScene.getOnceTriggers().triggerOnce(9900796);
+{isConditionTrue_0 = runtimeScene.getOnceTriggers().triggerOnce(11305076);
 }
 }
 }
@@ -235,10 +284,10 @@ gdjs.copyArray(runtimeScene.getObjects("NativeAngry"), gdjs.MainCode.GDNativeAng
 gdjs.MainCode.GDBulletObjects1.length = 0;
 
 {gdjs.evtTools.object.createObjectOnScene((typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : runtimeScene), gdjs.MainCode.mapOfGDgdjs_9546MainCode_9546GDBulletObjects1Objects, (( gdjs.MainCode.GDNativeAngryObjects1.length === 0 ) ? 0 :gdjs.MainCode.GDNativeAngryObjects1[0].getCenterXInScene()), (( gdjs.MainCode.GDNativeAngryObjects1.length === 0 ) ? 0 :gdjs.MainCode.GDNativeAngryObjects1[0].getCenterYInScene()), "");
-}{gdjs.evtTools.sound.playSound(runtimeScene, "assets\\NativeFire.wav", false, 100, 1);
 }{for(var i = 0, len = gdjs.MainCode.GDNativeAngryObjects1.length ;i < len;++i) {
     gdjs.MainCode.GDNativeAngryObjects1[i].setAnimationName("Attack");
 }
+}{gdjs.evtTools.sound.playSound(runtimeScene, "assets\\NativeFire.wav", false, 100, 1);
 }}
 
 }
@@ -440,7 +489,7 @@ isConditionTrue_0 = false;
 isConditionTrue_0 = gdjs.evtTools.object.getSceneInstancesCount((typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : runtimeScene), gdjs.MainCode.mapOfEmptyGDGreenUfoObjectsEmptyGDGreenUfo2ObjectsEmptyGDGreenUfo3Objects) == 0;
 if (isConditionTrue_0) {
 isConditionTrue_0 = false;
-{isConditionTrue_0 = runtimeScene.getOnceTriggers().triggerOnce(9892124);
+{isConditionTrue_0 = runtimeScene.getOnceTriggers().triggerOnce(11296172);
 }
 }
 if (isConditionTrue_0) {
@@ -957,7 +1006,7 @@ isConditionTrue_0 = false;
 isConditionTrue_0 = gdjs.evtTools.variable.getVariableBoolean(runtimeScene.getGame().getVariables().getFromIndex(3), false);
 if (isConditionTrue_0) {
 isConditionTrue_0 = false;
-{isConditionTrue_0 = runtimeScene.getOnceTriggers().triggerOnce(9924292);
+{isConditionTrue_0 = runtimeScene.getOnceTriggers().triggerOnce(11341572);
 }
 }
 }

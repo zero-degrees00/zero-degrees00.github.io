@@ -87,7 +87,7 @@ isConditionTrue_0 = false;
 isConditionTrue_0 = gdjs.evtTools.input.isMouseButtonReleased(runtimeScene, "Left");
 if (isConditionTrue_0) {
 isConditionTrue_0 = false;
-{isConditionTrue_0 = runtimeScene.getOnceTriggers().triggerOnce(9810332);
+{isConditionTrue_0 = runtimeScene.getOnceTriggers().triggerOnce(12718540);
 }
 }
 }
@@ -110,7 +110,7 @@ isConditionTrue_0 = false;
 isConditionTrue_0 = gdjs.evtTools.input.isMouseButtonReleased(runtimeScene, "Left");
 if (isConditionTrue_0) {
 isConditionTrue_0 = false;
-{isConditionTrue_0 = runtimeScene.getOnceTriggers().triggerOnce(9810940);
+{isConditionTrue_0 = runtimeScene.getOnceTriggers().triggerOnce(12719756);
 }
 }
 }
@@ -133,13 +133,13 @@ isConditionTrue_0 = false;
 isConditionTrue_0 = gdjs.evtTools.input.isMouseButtonReleased(runtimeScene, "Left");
 if (isConditionTrue_0) {
 isConditionTrue_0 = false;
-{isConditionTrue_0 = runtimeScene.getOnceTriggers().triggerOnce(9812260);
+{isConditionTrue_0 = runtimeScene.getOnceTriggers().triggerOnce(12720684);
 }
 }
 }
 if (isConditionTrue_0) {
 {gdjs.evtTools.sound.pauseSoundOnChannel(runtimeScene, 1);
-}{gdjs.evtTools.window.openURL("https://primordialgamez.github.io/HouseBalloon", runtimeScene);
+}{gdjs.evtTools.window.openURL("https://zero-degrees.itch.io/animal-diff", runtimeScene);
 }}
 
 }
@@ -157,13 +157,13 @@ isConditionTrue_0 = false;
 isConditionTrue_0 = gdjs.evtTools.input.isMouseButtonReleased(runtimeScene, "Left");
 if (isConditionTrue_0) {
 isConditionTrue_0 = false;
-{isConditionTrue_0 = runtimeScene.getOnceTriggers().triggerOnce(9813428);
+{isConditionTrue_0 = runtimeScene.getOnceTriggers().triggerOnce(12722268);
 }
 }
 }
 if (isConditionTrue_0) {
 {gdjs.evtTools.sound.pauseSoundOnChannel(runtimeScene, 1);
-}{gdjs.evtTools.window.openURL("https://primordialgamez.github.io/PestzControl", runtimeScene);
+}{gdjs.evtTools.window.openURL("https://zero-degrees.itch.io/puff-escape", runtimeScene);
 }}
 
 }
@@ -181,13 +181,13 @@ isConditionTrue_0 = false;
 isConditionTrue_0 = gdjs.evtTools.input.isMouseButtonReleased(runtimeScene, "Left");
 if (isConditionTrue_0) {
 isConditionTrue_0 = false;
-{isConditionTrue_0 = runtimeScene.getOnceTriggers().triggerOnce(9814636);
+{isConditionTrue_0 = runtimeScene.getOnceTriggers().triggerOnce(12723908);
 }
 }
 }
 if (isConditionTrue_0) {
 {gdjs.evtTools.sound.pauseSoundOnChannel(runtimeScene, 1);
-}{gdjs.evtTools.window.openURL("https://primordialgamez.github.io/CheezyPath", runtimeScene);
+}{gdjs.evtTools.window.openURL("https://zero-degrees.itch.io/house-balloon-boundless", runtimeScene);
 }}
 
 }
@@ -205,13 +205,13 @@ isConditionTrue_0 = false;
 isConditionTrue_0 = gdjs.evtTools.input.isMouseButtonReleased(runtimeScene, "Left");
 if (isConditionTrue_0) {
 isConditionTrue_0 = false;
-{isConditionTrue_0 = runtimeScene.getOnceTriggers().triggerOnce(9815388);
+{isConditionTrue_0 = runtimeScene.getOnceTriggers().triggerOnce(12725364);
 }
 }
 }
 if (isConditionTrue_0) {
 {gdjs.evtTools.sound.pauseSoundOnChannel(runtimeScene, 1);
-}{gdjs.evtTools.window.openURL("https://primordialgamez.github.io/SeekNTap", runtimeScene);
+}{gdjs.evtTools.window.openURL("https://zero-degrees.itch.io/sea-snag", runtimeScene);
 }}
 
 }
@@ -229,13 +229,13 @@ isConditionTrue_0 = false;
 isConditionTrue_0 = gdjs.evtTools.input.isMouseButtonReleased(runtimeScene, "Left");
 if (isConditionTrue_0) {
 isConditionTrue_0 = false;
-{isConditionTrue_0 = runtimeScene.getOnceTriggers().triggerOnce(9816956);
+{isConditionTrue_0 = runtimeScene.getOnceTriggers().triggerOnce(12726612);
 }
 }
 }
 if (isConditionTrue_0) {
 {gdjs.evtTools.sound.pauseSoundOnChannel(runtimeScene, 1);
-}{gdjs.evtTools.window.openURL("https://primordialgamez.github.io/SeaSnag", runtimeScene);
+}{gdjs.evtTools.window.openURL("https://zero-degrees.itch.io/path-out", runtimeScene);
 }}
 
 }
@@ -253,13 +253,13 @@ isConditionTrue_0 = false;
 isConditionTrue_0 = gdjs.evtTools.input.isMouseButtonReleased(runtimeScene, "Left");
 if (isConditionTrue_0) {
 isConditionTrue_0 = false;
-{isConditionTrue_0 = runtimeScene.getOnceTriggers().triggerOnce(9817716);
+{isConditionTrue_0 = runtimeScene.getOnceTriggers().triggerOnce(12727860);
 }
 }
 }
 if (isConditionTrue_0) {
 {gdjs.evtTools.sound.pauseSoundOnChannel(runtimeScene, 1);
-}{gdjs.evtTools.window.openURL("https://primordialgamez.github.io/SpinASpace", runtimeScene);
+}{gdjs.evtTools.window.openURL("https://zero-degrees.itch.io/word-puff", runtimeScene);
 }}
 
 }
@@ -277,7 +277,7 @@ isConditionTrue_0 = false;
 isConditionTrue_0 = gdjs.evtTools.input.isMouseButtonReleased(runtimeScene, "Left");
 if (isConditionTrue_0) {
 isConditionTrue_0 = false;
-{isConditionTrue_0 = runtimeScene.getOnceTriggers().triggerOnce(9818900);
+{isConditionTrue_0 = runtimeScene.getOnceTriggers().triggerOnce(12729036);
 }
 }
 }
